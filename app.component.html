@@ -1,0 +1,7 @@
+
+<button (click)="click()">Click</button>
+<div>
+  <ng-container *ngIf="{ risultati: risultati$ | async } as resolved">
+    {{ resolved.risultati | json }}
+  </ng-container>
+</div>
